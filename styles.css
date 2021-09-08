@@ -1,0 +1,44 @@
+body{
+    margin: 10px;;
+}
+p{
+    font-size: 20px;
+}
+input[type=checkbox] + label {
+    color: rgb(184, 19, 19);
+    font-size: 100px;
+}
+input[type=checkbox]:checked:first-of-type + label{
+    font-size: 100px;
+    font-style: oblique;
+    color: lawngreen;
+}
+input[type=checkbox]:checked:last-of-type + label{
+    font-size: 100px;
+    font-style: italic;
+    color: rgb(0, 67, 252);
+}
+input[type=checkbox]:checked:nth-child(3n) + label{
+    font-size: 100px;
+    font-style: italic;
+    color: rgb(252, 206, 0);
+}
+
+#div1 {
+    width: calc(120px*10);
+    display: flex;
+    flex-flow: row wrap;
+    align-self: stretch;
+justify-content: space-around;
+}
+#div2 { 
+    text-indent: 30px;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    background: #46c2e7;
+    flex-grow: 12;
+}
+#div2:nth-child(8n+1) {
+    background: #f04c40;
+}
